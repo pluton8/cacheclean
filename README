@@ -1,0 +1,7 @@
+A simple python script to clean up the /var/cache/pacman/pkg directory.  More versatile than pacman -Sc in that you can select how many old versions to keep.
+
+Usage: cache_clean {-p} {-v} <# of copies to keep>
+
+# of copies to keep - (required) how many generations of each package.
+-p - (optional) preview what would be deleted.
+-v - (optional) show deleted packages.

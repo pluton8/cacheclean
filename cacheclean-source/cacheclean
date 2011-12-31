@@ -89,7 +89,8 @@ bpat = re.compile("""
 (-i686|-x86_64|-any)?   # (4) architecture
 \.pkg\.tar              # (5) extension
 (?:\.(?:gz|bz2|xz|Z))?  # (6) compresssion extension
-(?:\.aria2|.sig)?$      # (7) other extension
+(?:\.aria2|.sig)?       # (7) other extension
+(?:\.part)?$            # (8) partially-downloaded files' extension
 """, re.X)
 
 n_deleted = 0
